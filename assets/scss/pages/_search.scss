@@ -1,0 +1,193 @@
+$height-header: 600px;
+/* Colors BG pages */
+$dark-bg: $eerie-black;
+$light-bg: #fff;
+
+#main-page {
+  margin: 0;
+  padding: 0;
+	&.site-main-search {
+    &.dark {
+      background-color: $dark-bg;
+
+      .wrapp-template-search {
+        padding: 5rem 0;
+      }
+    }
+  }
+}
+
+/* 
+	
+	 .wrapp-template-page {
+      padding: 5rem 0;
+
+      
+
+      .header-attachment-thumbnail {
+        background-color: #262626;
+        height: $height-header;
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+        position: relative;
+        z-index: 10;
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 20;
+          background-color: rgba(0, 0, 0, .5);
+          width: 100%;
+          height: 100%;
+        }
+
+        .result-search {
+          @include poppins(1rem, 400, #fff);
+          margin: 0;
+          padding: 0;
+          position: relative;
+          z-index: 30;
+        }
+
+        .entry-title {
+          @include poppins(4rem, 600, #fff);
+          margin: 0;
+          padding: 0;
+          position: relative;
+          z-index: 30;
+        }
+
+        .wrapp-breadcrumbs {
+          list-style: none;
+          margin: .5rem 0 0 0;
+          padding: 0;
+          position: relative;
+          z-index: 30;
+
+          li {
+            display: inline-block;
+            @include poppins(0.875rem, 300, #fff);
+
+            &::after {
+              content: '\e849';
+              font-family: 'colunga';
+              color: #fff;
+              display: inline-block;
+              margin: 0 0.5rem;
+            }
+
+            &:last-child {
+              &::after {
+                content: '';
+                margin: 0;
+              }
+            }
+
+            a {
+              color: #fff;
+              text-decoration: none;
+              transition: all 0.2s ease;
+              outline: 0;
+
+              &:hover {
+                text-decoration: underline;
+                color: $forest-green;
+              }
+            }
+          }
+        }
+      }
+
+      .wrapp-post-search {
+        background-color: #fff;
+        padding: 5rem 0;
+
+        .media-search {
+          margin: 0 0 1.5rem 0;
+          border-bottom: 1px solid #e3e3e3;
+          padding: 1rem 0;
+
+
+          .thumb-media-search {
+            width: 64px;
+            height: 64px;
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 .5rem 0 0;
+          }
+
+          .media-body-search {
+            display: inline-block;
+            width: 90%;
+            vertical-align: top;
+
+            .byline-media-search {
+              @include poppins(12px, 400, $cadet-gray);
+              margin: 0;
+              padding: 0;
+            }
+
+            .title-media-search {
+              @include poppins(1.5rem, 600, $jet);
+              display: inline-block;
+              width: 100%;
+              padding: 0;
+              margin: 0;
+
+              a.blog-title {
+                color: $jet;
+                text-decoration: none;
+                transition: all 0.2s ease;
+                outline: 0;
+
+                &:hover {
+                  color: #009739;
+                  text-decoration: underline;
+                }
+              }
+
+              .text-media-search {
+                background-color: #fff;
+                padding: .5rem 0;
+                @include poppins(0.875rem, 400, $cadet-gray);
+                line-height: 1.4;
+                margin: 1rem 0;
+                display: inline-block;
+              }
+
+              .wrapp-btn {
+                a {
+                  &.read-more {
+                    @include poppins(0.813rem, 600, $jet);
+                    background: none;
+                    padding: 0;
+                    letter-spacing: 2px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    margin: 0;
+                    border-radius: 0;
+                    line-height: normal;
+                    display: inline-block;
+                    vertical-align: middle;
+
+                    &::after {
+                      font-family: "colunga";
+                      content: "\e86b";
+                      font-size: 8px;
+                      font-weight: 400;
+                      margin-left: 6px;
+                      display: inline-block;
+                      vertical-align: middle;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    } 
+		*/

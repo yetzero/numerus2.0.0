@@ -1,0 +1,110 @@
+.owl-carousel {
+  overflow: hidden;
+
+  .owl-stage-outer {
+    .owl-stage {
+      .owl-item {
+        text-align: center;
+
+        .item {
+          width: auto;
+          height: auto;
+          text-align: center;
+
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: center;
+          align-items: center;
+          align-content: stretch;
+
+          .img-client {
+            width: 280px;
+            height: auto;
+            display: inline-block;
+            vertical-align: middle;
+          }
+
+          .img-informe {
+            width: auto;
+            height: 460px;
+            display: inline-block;
+            vertical-align: middle;
+
+            @media (max-width:640px) {
+              width: 300px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+  .owl-nav {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+
+    .owl-prev,
+    .owl-next {
+      position: absolute;
+      height: 100px;
+      color: inherit;
+      background: none;
+      border: none;
+      z-index: 100;
+
+      i {
+        font-size: 3rem;
+        color: $eerie-black;
+
+        &.custom-icon {
+          font-size: 2rem;
+          color: $eerie-black;
+        }
+      }
+    }
+
+    .owl-prev {
+      left: 0;
+
+      &:hover {
+        background: transparent !important;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .owl-next {
+      right: 0;
+
+      &:hover {
+        background: transparent !important;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+#modalInformes {
+  .modal-dialog {
+    .modal-content {
+      border-radius: 8px;
+      overflow: hidden;
+
+      .modal-header {
+        border: none;
+      }
+
+      .modal-body {}
+    }
+  }
+}

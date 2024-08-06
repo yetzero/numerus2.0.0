@@ -1,0 +1,101 @@
+.content-more-control {
+  height: auto;
+  min-height: auto;
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+
+  .section-title {
+    text-align: right;
+
+    .title {
+      @include raleway(13rem, 600, $eerie-black);
+      margin: 0;
+      padding: 0;
+      line-height: normal;
+      display: inline-block;
+      width: 100%;
+      letter-spacing: -3px;
+
+      @media (max-width: 640px) {
+        font-size: 5rem;
+      }
+
+      .custom-word {
+        width: 100%;
+        display: inline-block;
+        line-height: 100%;
+        font-weight: 400;
+        font-size: 4rem;
+      }
+    }
+
+    .sumary {
+      @include raleway(1.25rem, 500, $eerie-black);
+      margin: 0 0 3rem 0;
+      padding: 0;
+      line-height: normal;
+      display: inline-block;
+      text-align: left;
+      display: inline-block;
+      width: 25%;
+    }
+  }
+
+  .sumary {
+    @include raleway(1.188rem, 400, $eerie-black);
+    margin: 0 0 1rem 0;
+    padding: 0;
+    line-height: normal;
+    display: inline-block;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+
+    @media (max-width: 640px) {
+      margin: 0 0 1rem 0;
+      width: 100%;
+      font-size: 19px;
+    }
+  }
+
+  .bg-banner-more-control {
+    min-height: 600px;
+    width: 100%;
+    display: inline-block;
+    /* background: #000 url('../images/interior-slide.jpg') center center no-repeat;
+    background-size: 100%; */
+
+    background-image: url(../images/bg-more-control.jpg);
+    background-position: top center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    //background-attachment: fixed;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+
+    .banner-more-control {
+      .title-banner {
+        @include raleway(4.6rem, 500, $white);
+        margin: 0 0 2rem 0;
+        padding: 0;
+        line-height: 4rem;
+        display: inline-block;
+        text-align: left;
+        letter-spacing: -2px;
+      }
+
+      .sumary-banner {
+        @include raleway(1.188rem, 400, $white);
+        margin: 0 0 1rem 0;
+        padding: 0;
+        line-height: normal;
+        display: inline-block;
+        text-align: left;
+        display: inline-block;
+        width: 50%;
+      }
+    }
+  }
+}

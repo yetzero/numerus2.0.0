@@ -1,0 +1,146 @@
+@media (max-width: 575px) {
+  .pagination {
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+  .pagination::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+}
+
+#wrapper-pagination {
+  align-content: center;
+  justify-content: center;
+  display: flex;
+	&.dark {
+    .inner-pagination {
+      .pagination {
+        margin: 2rem 0 0 0;
+
+        .page-item {
+          display: inline-block;
+          vertical-align: middle;
+          margin: 0 0.5rem;
+
+          &.active {
+
+
+            .page-link {
+              color: $orange-crayola !important;
+              font-weight: bold;
+              font-size: 1.4rem;
+              text-decoration: none !important;
+            }
+          }
+
+          /* .prev {
+      @include poppins(1rem, 400, $jet);
+    } */
+
+          .page-link {
+            @include inter(1.3rem, 300, #fff);
+            border: 0;
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: transparent;
+
+            @media (max-width: 767px) {
+              font-size: 1rem;
+            }
+
+            &:hover {
+              color: $palatinate-blue;
+              background-color: transparent;
+            }
+          }
+
+          .next,
+          .prev {
+            @include roboto(0.875rem, 400, #fff);
+            margin: 0 0.5rem 0 0;
+            padding: 0;
+            display: inline-block;
+            vertical-align: middle;
+
+            &:hover {
+              color: $palatinate-blue;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.light {
+    .inner-pagination {
+      .pagination {
+        margin: 2rem 0 0 0;
+
+        .page-item {
+          display: inline-block;
+          vertical-align: middle;
+          margin: 0 0.5rem;
+
+          &.active {
+
+
+            .page-link {
+              color: $orange-crayola !important;
+              font-weight: bold;
+              font-size: 1.4rem;
+              text-decoration: none !important;
+            }
+          }
+
+          /* .prev {
+      @include poppins(1rem, 400, $jet);
+    } */
+
+          .page-link {
+            @include inter(1.3rem, 300, $eerie-black);
+            border: 0;
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: transparent;
+
+            @media (max-width: 767px) {
+              font-size: 1rem;
+            }
+
+            &:hover {
+              color: $palatinate-blue;
+              background-color: transparent;
+            }
+          }
+
+          .next,
+          .prev {
+            @include roboto(0.875rem, 400, $eerie-black);
+            margin: 0 0.5rem 0 0;
+            padding: 0;
+            display: inline-block;
+            vertical-align: middle;
+
+            &:hover {
+              color: $palatinate-blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.pagination .page-item.active .page-link {
+  background-color: transparent;
+  color: #fff;
+  text-decoration: underline;
+}

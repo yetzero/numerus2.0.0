@@ -1,0 +1,135 @@
+/*
+* @Autor: cmunozm
+* @Área: Webmain
+* @Empresa: Webmain
+* @URL: 
+* @version: 1.0.0
+**/
+
+
+/*
+ * @librarys vendors
+ * Bootstrap | aos | animate | ion-icons | font-awesome | themify icons.
+ **/
+
+//@import 'vendors/getbootstrap/bootstrap.scss';
+//@import 'vendors/aos/aos.scss';
+//@import 'vendors/animate/animate-scss.scss';
+//@import 'vendors/ionicons/docs/css/ionicons';
+//@import 'vendors/font-awesome-4.7.0/scss/font-awesome.scss';
+//@import 'vendors/themify-icons/themify-icons.scss';
+
+/*
+ * @Import Base | Components | helpers
+ * */
+@import 'base/normalize';
+@import 'base/variables';
+@import 'helpers/mixins';
+@import 'base/colores';
+@import 'helpers/helps';
+@import 'helpers/querys-helps';
+@import 'base/fonts-google';
+@import 'base/font-web';
+@import 'base/modal';
+@import 'components/spinner';
+@import 'components/btn';
+@import 'components/btn-custom';
+//@import 'components/titles';
+@import 'helpers/width';
+@import 'components/video';
+@import 'components/owl';
+//@import 'components/tiny-slider';
+@import 'components/alertas';
+@import 'components/accordeon';
+@import 'components/badget-custom';
+@import 'helpers/spaces';
+@import 'components/box-icon';
+//@import 'components/multiLevelMenu';
+@import 'components/style-navbar';
+@import 'components/progress-bar';
+//@import 'base/floating-label';
+//@import 'base/font-web';
+//@import 'layout/estructura';
+//@import 'components/paginacion';
+@import 'base/variables';
+
+//@import 'global';
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 100%
+}
+
+@media all and (max-width: 768px) {
+  html {
+    font-size: 93.75%
+  }
+}
+
+html,
+body {
+  @include border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.scroll-behavior {
+  scroll-behavior: smooth;
+}
+
+
+/*
+ * @Imports Modules | Pages | Base | Components
+ **/
+
+/*
+ *@Base 
+ **/
+@import 'base/preloader';
+
+/* 
+*@Pages
+**/
+@import 'pages/header';
+@import 'modules/menu';
+@import 'pages/footer';
+@import 'pages/front-page';
+@import 'pages/page';
+
+/* 
+*@Modules
+**/
+@import 'modules/intro';
+@import 'modules/intro-page';
+@import 'modules/about-us';
+@import 'modules/software';
+@import 'modules/demo';
+@import 'modules/colegios';
+@import 'modules/consultoria';
+@import 'modules/contabilidad';
+@import 'modules/continuous-update-con';
+@import 'modules/remuneraciones';
+@import 'modules/continuous-update-rem';
+@import 'modules/clientes';
+@import 'modules/more-control';
+@import 'modules/contact-form';
+@import 'modules/eficiencia-sin-interrupciones';
+@import 'modules/boxes-pages';
+@import 'modules/nosotros';
+@import 'modules/team';
+@import 'modules/modal-contact';
+@import 'modules/consultoria-page';
+@import 'modules/detail-consultoria';
+@import 'pages/footer';
+@import 'modules/sesion-app';

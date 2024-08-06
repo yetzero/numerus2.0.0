@@ -1,0 +1,107 @@
+/*** BOS ICONS ***/
+.service-item,
+.box-item {
+  position: relative;
+  padding: 45px 30px;
+  background: #FFFFFF;
+  transition: .5s;
+  border: 1px solid rgba(0, 0, 0, 0.175);
+
+  &:hover {
+    background: #7af17a;
+    border: 1px solid #7af17a;
+
+    .service-icon {
+      background: #FFFFFF;
+    }
+  }
+
+  .service-icon,
+  .box-icon {
+    margin: 0 auto 20px auto;
+    width: 90px;
+    height: 90px;
+    color: $primary-color;
+    background: #e6f4e9;
+    transition: .5s;
+  }
+
+  h5,
+  p {
+    transition: .5s;
+  }
+
+  &:hover h5,
+  &:hover p {
+    color: #FFFFFF;
+  }
+
+  a {
+    &.btn {
+      position: relative;
+      display: flex;
+      color: $primary-color;
+      transition: .5s;
+      z-index: 1;
+    }
+  }
+
+  &:hover {
+    a {
+      &.btn {
+        color: $primary-color;
+
+        &::before {
+          position: absolute;
+          content: "";
+          width: 0;
+          height: 35px;
+          top: 0;
+          left: 0;
+          border-radius: 35px;
+          background: #e6f4e9;
+          transition: .5s;
+          z-index: -1;
+        }
+      }
+    }
+
+    a.btn::before {
+      width: 100%;
+      background: #e6f4e9;
+    }
+  }
+}
+
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+  border-radius: 50px;
+}
+
+
+
+
+/* .service-item a.btn::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 35px;
+  top: 0;
+  left: 0;
+  border-radius: 35px;
+  background: #e6f4e9;
+  transition: .5s;
+  z-index: -1;
+} */
+
+/* .service-item:hover a.btn::before {
+  width: 100%;
+  background: #e6f4e9;
+} */

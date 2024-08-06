@@ -1,0 +1,138 @@
+/* Core colors ------------------------------*/
+/* $white: #ffffff;
+$black: #000000;
+$very-dark-grey: #131315;
+$dark-grey: #44464b;
+$medium-grey: #94979e;
+$light-grey: #cfd0d2;
+$very-light-grey: #f2f2f3;
+$off-white: #f7f8fa;
+$content-max-width: 46rem;
+$post-margin: 1.5625rem;
+$logo-color: red;
+$primary-theme-color: green;
+$header-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+
+$site-width: 1200px;
+$site-max-width: calc($site-width + ($post-margin * 2));
+$mobile-site-max-width: calc($content-max-width + ($post-margin * 2));
+$body-background: #ffffff;
+$body-font: 100%;
+$body-font-color: $very-dark-grey;
+$body-font-size: 1rem;
+$h1-font-size: 3.2rem;
+$h2-font-size: 2.25rem;
+$h3-font-size: 1.875rem;
+$h4-font-size: 1.5rem;
+$h5-font-size: 1.25rem;
+$h6-font-size: 1.1rem;
+$heading-font-weight: 700;
+$sidebar-logo-font-size: 2.5rem; */
+
+/* Posts ------------------------------*/
+/* $post-margin: 1.5625rem;
+$post-inner-elements-margin: 2rem;
+$post-thumbnail-border-radius: 0;
+$cols-5-post-margin: calc($post-margin / 1.5);
+$cols-6-post-margin: calc($post-margin / 1.5);
+$cols-7-post-margin: calc($post-margin / 1.5);
+$cols-4-small-desktop-flex-basis: calc(100% / 3 - ($post-margin * 2));
+$cols-5-small-desktop-flex-basis: calc(100% / 4 - ($cols-5-post-margin * 2));
+$cols-6-small-desktop-flex-basis: calc(100% / 4 - ($cols-5-post-margin * 2));
+$cols-7-small-desktop-flex-basis: calc(100% / 4 - ($cols-5-post-margin * 2));
+$cols-6-breakpoint-flex-basis: calc(100% / 5 - ($cols-5-post-margin * 2));
+$cols-7-breakpoint-flex-basis: calc(100% / 6 - ($cols-6-post-margin * 2)); */
+
+/* Header ------------------------------*/
+/* $header-background: $body-background;
+$header-width: $site-max-width;
+$custom-logo-width: auto;
+$header-padding: 1.25rem;
+$logo-font-size: 2.5rem;
+$header-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); */
+
+/* Footer ------------------------------*/
+/* $footer-background: #f7f8fa;
+$footer-color: inherit; */
+/* Sidebar ------------------------------*/
+/* $sidebar-width: calc(300px + ($post-margin * 2));
+$toggle-sidebar-background: #ffffff;
+$toggle-sidebar-border-color: $very-light-grey;
+$toggle-sidebar-logo-color: $logo-color;
+$toggle-sidebar-link-color: inherit;
+$sidebar-logo-max-width: 250px;
+ */
+/* Cover global styling ------------------------------*/
+/* $cover-global-color: #ffffff;
+$cover-brightness-filter: 75%;
+$cover-overlay-gradient: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+$link-color: red;
+$link-hover-color: blue;
+$link-text-decoration: underline solid $link-color 2px;
+$link-hover-text-decoration: underline solid $link-hover-color 2px;
+$content-width: calc(100% - ($post-margin * 2));
+$content-max-width: 46rem;
+$mobile-content-width: calc($content-max-width + ($post-margin * 2));
+$thumbnail-hero-padding: 40%;
+$thumbnail-wide-padding: 56.25%;
+$thumbnail-landscape-padding: 66.75%;
+$thumbnail-square-padding: 100%;
+$thumbnail-portrait-padding: 149.88%; */
+
+/* Misc Globals ------------------------------*/
+/* $single-body-background: $body-background;
+$single-entry-font-size: 1.1875rem;
+$global-elements-margin: 1.5625rem; */
+/* Usually the same as post margin */
+/* $global-elements-border-radius: 0;
+$button-background: $primary-theme-color;
+$button-color: $white;
+$button-border-radius: 0;
+$input-border-radius: 25px;
+$button-padding: 1rem 1.5rem;
+$button-font: $body-font;
+$button-font-size: 13px;
+$default-content-margin: 1.5rem;
+$heading-margin: 1.5rem 0;
+$post-grid-entry-header-flex-gap: 1rem; */
+
+/* front-page vars ------------------------------*/
+/* $post-background: #ffffff;
+$post-box-shadow: 0 0 25px rgba(0, 0, 0, 0.07);
+$post-thumbnail-border-radius: 8px;
+$thumbnail-padding: 10px;
+$post-padding: 1.5625rem;
+$entry-title-link-color: $black;
+$excerpt-color: #94979e;
+ */
+/* Misc Globals ------------------------------*/
+/* Header ------------------------------*/
+
+/* Intro ------------------------------*/
+$intro_color: #ffffff;
+$intro_subtitle: 4.5rem;
+$intro_title: 15rem;
+
+/* Footer ------------------------------*/
+/* Sidebar ------------------------------*/
+
+/* VARIABLES CUSTOMIZADAS ------------------------------*/
+$height-header: 600px;
+$bg-color-header: rgba(0, 0, 0, .1);
+
+$size-title: 2.6rem;
+$size-subtitile: 2.6rem;
+$size-sumary: 1.3rem;
+$size-breadcrumbs: 1.3rem;
+$size-title-list: 1.6rem;
+
+$size-title-sm: 1.6rem;
+$size-subtitile-sm: 1.6rem;
+$size-sumary-sm: 1.2rem;
+$size-title-list-sm: 1.6rem;
+
+$font-weight-title: 600;
+$font-weight-subtitle: 600;
+$font-weight-sumary: 400;
+$text-shadow-banner: 2px 2px 0px #282828;

@@ -1,0 +1,91 @@
+
+/* colores */
+.alerta {
+    padding: .75rem 1.25rem;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    display: block;
+    &.alerta-ok {
+        color: $ok;
+        background-color: $bg_ok;
+        border-color: $border_ok;
+    & .alert-link {
+        color: $link_ok;
+        }
+        & .close {
+            color: $ok;
+            text-decoration: none;
+            float: right;
+            &:hover {
+            color: $link_ok;
+            }
+        }
+    }
+    &.alerta-info {
+        color: $info;
+        background-color: $bg_info;
+        border-color: $border_info;
+    & .alert-link {
+            color: $link_info;
+        }
+    & .close {
+        color: $info;
+        text-decoration: none;
+        float: right;
+            &:hover {
+            color: $link_info;
+            }
+        }
+    }
+    &.alerta-warning {
+        color: $warning;
+        background-color: $bg_warning;
+        border-color: $border_warning;
+    & .alert-link {
+            color: $link_warning;
+        }
+    & .close {
+        color: $warning;
+        text-decoration: none;
+        float: right;
+        &:hover {
+        color: $link_warning;
+        }
+        }
+    }
+    &.alerta-danger {
+        color: $danger;
+        background-color: $bg_danger;
+        border-color: $border_danger;
+    & .alert-link {
+            color: $link_danger;
+        }
+    & .close {
+        color: $danger;
+        text-decoration: none;
+        float: right;
+            &:hover {
+            color: $link_danger;
+            }
+        }
+    } 
+}
+
+.padd-y {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.padd-x {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.padd-xy {
+    padding: 1rem;
+}
+.show-alert {
+    display: block;
+}
+.hidden-alert {
+    display: none;
+}

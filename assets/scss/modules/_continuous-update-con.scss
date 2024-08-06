@@ -1,0 +1,116 @@
+.content-continuous-update-con {
+  height: auto;
+  min-height: auto;
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+
+  .section-title {
+    text-align: right;
+
+    .title {
+      @include raleway(13rem, 600, $eerie-black);
+      margin: 0;
+      padding: 0;
+      line-height: normal;
+      display: inline-block;
+      width: 100%;
+      letter-spacing: -3px;
+
+      @media (max-width: 640px) {
+        font-size: 4.6rem;
+        margin: 0 0 1rem 0;
+      }
+
+      .custom-word {
+        width: 100%;
+        display: inline-block;
+        line-height: 100%;
+        font-weight: 400;
+        font-size: 4rem;
+      }
+    }
+
+    .sumary {
+      @include raleway(1.25rem, 500, $eerie-black);
+      margin: 0 0 3rem 0;
+      padding: 0;
+      line-height: normal;
+      display: inline-block;
+      text-align: left;
+      display: inline-block;
+      width: 25%;
+    }
+  }
+
+  .sumary {
+    @include raleway(1.188rem, 400, $eerie-black);
+    margin: 0 0 1rem 0;
+    padding: 0;
+    line-height: normal;
+    display: inline-block;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+
+    @media (max-width: 640px) {
+      margin: 0 0 1rem 0;
+      width: 100%;
+      font-size: 19px;
+    }
+  }
+
+  .bg-banner-continuous-update {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../images/bg-more-control.jpg);
+    background-position: top center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+
+    @media (max-width: 640px) {
+      background-size: cover;
+      min-height: auto;
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+
+
+    .banner-continuous-update {
+      .title-banner {
+        @include raleway(4.6rem, 500, $white);
+        margin: 0 0 2rem 0;
+        padding: 0;
+        line-height: 4rem;
+        display: inline-block;
+        text-align: left;
+        letter-spacing: -2px;
+
+        @media(max-width: 640px) {
+          font-size: 4rem;
+          line-height: 3.6rem;
+        }
+      }
+
+      .sumary-banner {
+        @include raleway(1.188rem, 400, $white);
+        margin: 0 0 1rem 0;
+        padding: 0;
+        line-height: normal;
+        display: inline-block;
+        text-align: left;
+        display: inline-block;
+        width: 50%;
+
+        @media (max-width: 640px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

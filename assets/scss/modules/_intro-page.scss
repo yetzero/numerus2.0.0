@@ -1,0 +1,55 @@
+.hero-page {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: top center;
+
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+
+  @media(max-width: 640px) {
+    height: 580px;
+    background-size: cover;
+    //background-position: center;
+    background-position: 68% center;
+  }
+
+  .wrapp-hero {
+    position: relative;
+    z-index: 50;
+
+    .inner-hero {
+      .title-hero {
+        @include raleway(4.5rem, 400, #fff);
+        margin: 0 0 -8px 0;
+        padding: 0;
+        line-height: 100%;
+        letter-spacing: -3px;
+
+        @media(max-width: 640px) {
+          font-size: 2.5rem;
+          letter-spacing: -2px
+        }
+      }
+
+      .subtitle-hero {
+        @include raleway(10rem, 600, #fff);
+        font-size: 10rem;
+        margin: 0;
+        padding: 0;
+        line-height: 100%;
+        letter-spacing: -3px;
+
+        @media(max-width: 640px) {
+          margin: .5rem 0 0 0;
+          font-size: 3.5rem;
+          letter-spacing: -2px;
+        }
+      }
+    }
+  }
+}

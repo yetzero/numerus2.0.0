@@ -1,0 +1,163 @@
+#footer {
+
+  &.main-footer {
+    background: url(../images/bg-footer.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center right;
+    height: auto;
+    min-height: auto;
+    padding: 0;
+    margin: 0;
+    margin: 0;
+    overflow: hidden;
+
+    @media (max-width: 640px) {
+      background-size: cover !important;
+			background-position: top right !important;
+      /* background-attachment: fixed; */
+    }
+
+    .footer-top {
+      padding: 3rem 0;
+
+      @media (max-width: 640px) {
+        padding: 4rem 0;
+      }
+
+      .title-section {
+        margin: 8rem 0 0 0;
+        padding: 0;
+
+        @media (max-width: 640px) {
+          margin: 0;
+        }
+
+        .title {
+          @include raleway(9rem, 600, $eerie-black);
+          padding: 0;
+          line-height: 7rem;
+          letter-spacing: -3px;
+          margin: 0;
+          display: inline-block;
+          width: 100%;
+
+          @media (max-width: 640px) {
+            margin: 0;
+            font-size: 3.6rem;
+            line-height: 3rem;
+          }
+        }
+      }
+    }
+
+    .footer-bottom {
+      padding: 3rem 0;
+
+      @media (max-width: 640px) {
+        padding: 0;
+      }
+
+      .wrapp-footer {
+        margin: 8rem 0;
+        padding: 0;
+
+        @media (max-width: 640px) {
+          margin: 3rem 0;
+        }
+
+        .box-footer {
+          display: inline-block;
+          width: 100%;
+
+          .box-title {
+            @include raleway(1.063rem, 500, $eerie-black);
+            margin: 0 0 1.6rem 0;
+            padding: 0;
+            display: block;
+          }
+
+          .box-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            width: 100%;
+
+            li {
+              margin: 0;
+              padding: 0;
+              @include raleway(1rem, 500, $eerie-black);
+
+              a {
+                text-decoration: none;
+                display: inline-block;
+                width: 100%;
+                @include raleway(1rem, 500, $eerie-black);
+                padding: .2rem 0;
+                @include transicion;
+
+                &:hover {
+                  letter-spacing: 1px;
+                  box-shadow: none;
+                  color: $neon-blue;
+                }
+              }
+            }
+          }
+
+          .redes {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            width: 100%;
+
+            li {
+              display: inline-block;
+              padding: 0;
+              margin: 0 1rem 0 0;
+
+              a {
+                text-decoration: none;
+                display: inline-block;
+                @include transicion;
+                font-size: 2rem;
+                color: $eerie-black;
+
+                &:hover {
+                  color: $neon-blue;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: $palatinate-blue;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+
+  i {
+    font-size: 28px;
+    color: #fff;
+    line-height: 0;
+  }
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+}

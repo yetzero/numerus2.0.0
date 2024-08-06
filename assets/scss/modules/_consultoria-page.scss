@@ -1,0 +1,148 @@
+/* 
+height: 100vh;
+  background-image: url(../images/bg-consultoria.svg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+	background-attachment: fixed;
+  padding: 3.75rem 0;
+  margin: 0;
+  box-sizing: border-box;
+
+*/
+
+.hero-page-consultoria {
+  width: 100%;
+  height: 100vh;
+  background-color: $palatinate-blue;
+  background-image: url(../images/bg-consultoria.svg);
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+
+  @media(max-width: 640px) {
+    height: 500px;
+    background-size: 100%;
+    background-attachment: initial;
+    display: block !important;
+  }
+
+  .wrapp-hero-consultoria {
+    position: relative;
+    z-index: 50;
+    display: inline-block;
+    width: 100%;
+
+    @media(max-width: 640px) {
+      padding: 110px 0 50px 0;
+    }
+
+    .inner-hero-consultoria {
+      min-height: 340px;
+      margin: 3rem 0 0 0; 
+
+      @media(max-width: 640px) {
+        margin: 0;
+        height: auto;
+      }
+
+      .title-hero {
+        @include raleway(5rem, 500, $white);
+        margin: 0;
+        padding: 0;
+        line-height: 4.6rem;
+        min-height: 300px;
+        letter-spacing: -3px;
+        display: inline-block;
+
+        @media(max-width: 640px) {
+          width: 100%;
+          font-size: 3rem;
+          line-height: 100%;
+          min-height: 180px;
+        }
+      }
+
+      .wrapp-btn-hero {
+        display: block;
+      }
+    }
+
+    .inner-hero-consultoria-brand {
+      display: inline-block;
+      width: 100%;
+      text-align: right;
+      padding: 1rem 0;
+
+      @media(max-width: 640px) {
+        text-align: center;
+        position: initial;
+        margin: 1rem 0;
+
+      }
+
+      .logo-consultoria {
+        height: auto;
+        width: 280px;
+        display: inline-block;
+        object-fit: cover;
+        object-position: center;
+        margin: 2rem 0 0 0;
+
+        @media(max-width: 640px) {
+          margin: 0;
+          width: 200px;
+        }
+      }
+    }
+  }
+}
+
+.content-consultoria-page {
+  height: auto;
+  min-height: auto;
+  background-color: $white;
+  padding: 50px 0;
+  margin: 0;
+
+  .section-title {
+    text-align: right;
+
+    .title {
+      @include raleway(20rem, 600, $white);
+      margin: 0;
+      padding: 0;
+      line-height: normal;
+      display: inline-block;
+      width: 100%;
+      letter-spacing: -3px;
+
+      @media (max-width: 640px) {
+        font-size: 5rem;
+      }
+
+      .custom-word {
+        width: 100%;
+        display: inline-block;
+        line-height: 100%;
+        font-weight: 400;
+        font-size: 4rem;
+      }
+    }
+
+    .sumary {
+      @include raleway(1.25rem, 500, $white);
+      margin: 0 0 3rem 0;
+      padding: 0;
+      line-height: normal;
+      display: inline-block;
+      text-align: left;
+      display: inline-block;
+      width: 25%;
+    }
+  }
+}

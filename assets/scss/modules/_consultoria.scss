@@ -1,0 +1,106 @@
+$font-title: 7rem;
+
+.content-consultoria {
+  height: 100vh;
+  background-image: url(../images/bg-consultoria.svg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 3.75rem 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  @media (max-width: 640px) {
+    height: auto;
+    display: block !important;
+    background-color: $palatinate-blue;
+    background-size: 500px;
+    background-attachment: initial;
+  }
+
+  .section-title {
+    padding: 0;
+
+    .title {
+      @include raleway(7rem, 600, $white);
+      margin: 0 0 2rem 0;
+      padding: 0;
+      line-height: calc(7rem - 3rem);
+      display: inline-block;
+      text-align: left;
+      width: 100%;
+
+      @media (max-width: 640px) {
+        margin: 0;
+        font-size: 3.5rem;
+        line-height: 1rem;
+      }
+
+      .custom-word {
+        width: 100%;
+        display: inline-block;
+        line-height: 100%;
+        font-weight: 400;
+        font-size: 4rem;
+
+        @media (max-width: 640px) {
+          font-size: 2.5rem;
+        }
+      }
+    }
+
+    .sumary {
+      @include raleway(1.25rem, 500, $white);
+      margin: 0 0 3rem 0;
+      padding: 0;
+      line-height: normal;
+      display: inline-block;
+      text-align: left;
+      width: 50%;
+
+      @media (max-width: 640px) {
+        width: 100%;
+        font-size: 19px;
+        margin-top: 2em;
+      }
+    }
+  }
+
+  .section-brand {
+    text-align: right;
+    padding: 0;
+    margin: 3rem 0 0 0;
+    display: inline-block;
+    width: 100%;
+
+    @media (max-width: 640px) {
+      text-align: center;
+    }
+
+    .logo-consultoria {
+      display: inline-block;
+      width: 280px;
+      height: auto;
+    }
+  }
+}
+
+/* object-fit: cover;
+  object-position: bottom;
+	
+	img {
+  max-inline-size: 100%;
+  block-size: auto;
+  aspect-ratio: 2/1;
+}
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+  aspect-ratio: 2/1;
+  object-fit: cover;
+  object-position: top center;
+}
+	
+	*/

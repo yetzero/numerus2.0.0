@@ -1,0 +1,204 @@
+/*
+ * @Help para maquetar
+ * Aplicación: aplicar al elemento HTML como un ID o Class
+ **/
+.border-1,
+#border-1 {
+  @include border_help(#000);
+}
+
+.border-2,
+#border-2 {
+  @include border_help(red);
+}
+
+.border-3,
+#border-3 {
+  @include border_help(deeppink);
+}
+
+.border-4,
+#border-4 {
+  @include border_help(lime);
+}
+
+/* 
+ * @Help de maquetación y mixin
+ **/
+
+.air-margin {
+  @include space_margin();
+}
+
+.air-padding {
+  @include space_padding();
+}
+
+.n0 {
+  @include no_margin;
+}
+
+.p0 {
+  @include no_padding;
+}
+
+/* 
+ * @Help quitar espacios en modo in-block
+ * Aplicar en el div padre de los elementos a aplicar
+ **/
+.no-space {
+  font-size: 0;
+  letter-spacing: 0;
+  word-spacing: 0;
+}
+
+/* 
+ * @Help centrar elementos de forma vertical
+ * Aplicar en el div padre la class father y al higo la class center-child
+ **/
+.father {
+  position: relative;
+}
+
+.center-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: inline-block;
+}
+
+.vertical-centering {
+  display: table;
+  width: 100%;
+  min-height: 100%;
+
+  @media(max-width: 640px) {
+    display: block;
+    height: auto;
+    text-align: center;
+  }
+
+  .vertical-object {
+    display: table-cell;
+    vertical-align: middle;
+
+    @media(max-width: 640px) {
+      display: inline-block;
+      height: auto;
+    }
+
+    &.object-left {
+      text-align: left;
+      width: 100%;
+
+      @media(max-width: 640px) {
+        text-align: center;
+      }
+    }
+
+    &.object-right {
+      text-align: right;
+      width: 100%;
+
+      @media(max-width: 640px) {
+        text-align: center;
+      }
+    }
+
+    &.object-center {
+      text-align: center;
+      width: 100%;
+
+      @media(max-width: 640px) {
+        text-align: center;
+      }
+    }
+  }
+}
+
+/* 
+ * @Help Efectos de sombra
+ * Aplicar en el div
+ **/
+
+
+.line-hr-black {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  clear: both;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .26), rgba(0, 0, 0, 0));
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .26), rgba(0, 0, 0, 0));
+  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .26), rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .26), rgba(0, 0, 0, 0));
+}
+
+.line-hr-white {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  clear: both;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, .50), rgba(255, 255, 255, 0));
+  background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 509), rgba(255, 255, 255, 0));
+  background-image: -ms-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, .50), rgba(255, 255, 255, 0));
+  background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, .50), rgba(255, 255, 255, 0));
+}
+
+.effect-shadow-2 {
+  position: relative;
+
+  &:before,
+  &:after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width: 300px;
+    background: #777;
+    -webkit-box-shadow: 0 15px 10px #777;
+    -moz-box-shadow: 0 15px 10px #777;
+    box-shadow: 0 15px 10px #777;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+  }
+
+  &:after {
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
+    right: 10px;
+    left: auto;
+  }
+}
+
+/* 
+* @css variables & mixin para fondos
+**/
+/*Ej. @include background(#f1f1f1, 'banner-liberamos.jpg', left, center, no-repeat, fixed, cover); */
+$assets_path: 'http://placeimg.com';
+$path_file: '../images/img-servicios';
+
+@mixin background ($bg-color, $img_uri, $value_x, $value_y, $repeat, $attachment, $value_size) {
+  background: $bg-color url(#{$path_file}/#{$img_uri}) $value_x $value_y $repeat $attachment/$value_size;
+}
+
+/* css para captcha google */
+@mixin re-captcha ($value_captcha:.77, $value_origin:0 0) {
+  transform: scale($value_captcha);
+  -webkit-transform: scale($value_captcha);
+  transform-origin: $value_origin;
+  -webkit-transform-origin: $value_origin;
+}

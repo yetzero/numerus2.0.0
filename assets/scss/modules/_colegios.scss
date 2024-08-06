@@ -1,0 +1,53 @@
+.content-colegios {
+  width: 100%;
+  min-height: 100%;
+  background-color: $eerie-black;
+  padding: 15rem 0 1rem 0;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  @media(max-width: 640px) {
+    padding: 8rem 0;
+    display: block !important; 
+  }
+
+  .stats-item {
+    position: relative;
+    padding: 0;
+    margin: 0;
+
+    .plus {
+      position: absolute;
+      font-size: 9rem;
+      font-weight: 500;
+      left: 0;
+      top: 0;
+      line-height: 100%;
+      color: #fff;
+
+      @media (max-width: 640px) {
+        font-size: 5rem;
+      }
+    }
+
+    .purecounter {
+      @include inter(18rem, 600, #fff);
+      line-height: 100%;
+      color: #fff;
+      letter-spacing: -20px;
+      font-style: normal;
+      padding: 0;
+      margin: 0 0 0 2rem;
+      display: inline-block;
+
+      @media(max-width: 640px) {
+        font-size: 10rem;
+        letter-spacing: -9px;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+  }
+}

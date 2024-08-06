@@ -1,0 +1,97 @@
+$color_link: #007bff;
+
+.wrapp-accordion {
+    .card {
+        margin-bottom: .35em;
+        border-radius: 0;
+
+        .card-header {
+            background-color: $color_link;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-line-pack: stretch;
+            align-content: stretch;
+            cursor: pointer;
+
+            .link-accordion {
+                @include roboto(1rem, 400, #fff);
+                display: inline-block;
+                vertical-align: middle;
+                width: 93%;
+            }
+
+            &::after {
+                font: normal normal normal 14px/1 FontAwesome;
+                content: "\f067";
+                color: #fff;
+                display: inline-block;
+                vertical-align: middle;
+                /* float: right; */
+                padding: 0;
+                margin: 0;
+                @include transicion;
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            &.collapsed::after {
+                font: normal normal normal 14px/1 FontAwesome;
+                /* symbol for "collapsed" panels */
+                content: "\f068";
+                color: #fff;
+                display: inline-block;
+                vertical-align: middle;
+                /* float: right; */
+                padding: 0;
+                margin: 0;
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+
+        }
+
+        .collapse {
+            .card-body {
+                .title {
+                    @include roboto(1.8rem, 500, #333);
+                }
+
+                .sumary {
+                    @include roboto(1rem, 400, #333);
+                }
+
+                ul.lista-collapse {
+                    list-style: none;
+                    margin: 0 0 25px 0;
+                    padding: 0;
+
+                    li {
+                        @include roboto(1rem, 400, #333);
+                        margin: 0 0 15px 0;
+
+                        &::before {
+                            content: "\f00c";
+                            font: normal normal normal 14px/1 FontAwesome;
+                            color: #28a745;
+                            margin: 0 8px 0 0;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

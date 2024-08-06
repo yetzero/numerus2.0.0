@@ -1,0 +1,32 @@
+.content-remuneraciones {
+  height: auto;
+  min-height: auto;
+  padding: 50px 0;
+  margin: 0;
+
+  .section-title {
+    margin-bottom: 3rem;
+
+    @media (max-width: 640px) {
+      margin-bottom: 0;
+    }
+
+    .title {
+      @include raleway(5rem, 600, $eerie-black);
+      margin: 0 0 3rem 0;
+      padding: 0;
+      line-height: 5rem;
+      letter-spacing: -3px;
+      display: inline-block;
+      width: 100%;
+
+      @media (max-width: 640px) {
+        font-size: 3rem;
+        margin: 0 0 1rem 0;
+        line-height: 100%;
+        letter-spacing: -2px;
+      }
+    }
+
+  }
+}

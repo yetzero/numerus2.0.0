@@ -1,0 +1,14 @@
+#Custom Files
+readme.txt
+LICENSE
+composer.json
+.stylelintrc.json
+package.json
+phpcs.xml.dist
+.eslintrc
+/assets/scss/prepros.config
+/diseno
+/html
+/assets/scss/prepros.config
+/respaldo
+.nova/Publishing/Numerus (allegedly).json

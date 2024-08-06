@@ -1,0 +1,179 @@
+#contactModal {
+  .modal-dialog {
+    .modal-content {
+      background-color: $white;
+      border-radius: 8px;
+
+
+      .modal-header {
+        border: none;
+        padding: 2rem 2rem 1rem 2rem;
+
+        .btn-close {
+          background-color: #fff;
+          background: none;
+          border: none;
+          border-radius: 0;
+          opacity: initial;
+
+          i {
+            font-size: 2rem;
+            color: $eerie-black;
+          }
+        }
+
+        .modal-title {
+          display: inline-block;
+          @include raleway(3rem, 200, $eerie-black);
+          letter-spacing: -3px;
+          line-height: 100%;
+          margin: 0;
+          padding: 0;
+          vertical-align: top;
+          width: 100%;
+        }
+      }
+
+      .modal-body {
+        padding: 2rem 2rem 1rem 2rem;
+
+        .custom-form-group {
+          margin: 0 0 1rem 0;
+          position: relative;
+
+          .form-label {
+            @include raleway(1rem, 300, $eerie-black);
+            margin: 0 0 .5rem 0;
+          }
+
+          .form-control {
+            background-color: #fff;
+            border: thin solid $eerie-black;
+            border-radius: .5rem;
+            height: 45px;
+          }
+
+          .custom-form-control-textarea {
+            min-height: 150px;
+          }
+        }
+      }
+
+      .modal-footer {
+        border: none;
+        justify-content: center;
+        padding: 0;
+
+        .custom-form-group {
+          display: block;
+          width: 100%;
+
+          .btn {
+            &.btn-contact {
+              display: block;
+              width: 100%;
+              margin: auto 0;
+              border: thin solid #fff;
+              line-height: 45px;
+              background-color: transparent;
+              @include raleway(1rem, 300, $eerie-black);
+              border-radius: 25px;
+              @include transicion;
+
+              &:hover {
+                background-color: #fff;
+                color: $eerie-black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.wpcf7-spinner {
+  display: block;
+  text-align: center;
+  margin: 0 auto 1rem auto;
+}
+
+.wpcf7-character-count.up.too-short {
+  padding: 0.1rem 0.4rem;
+  font-weight: bold;
+}
+
+.wpcf7 form .wpcf7-response-output {
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+
+.wpcf7 form .wpcf7-response-output {
+  margin: 2em 0.5em 1em;
+  padding: 0.2em 1em;
+  border: 2px solid #00a0d2;
+  /* Blue */
+}
+
+.wpcf7 form.init .wpcf7-response-output {
+  display: none;
+}
+
+.wpcf7-not-valid-tip {
+  color: #fff;
+  background-color: #dc3232;
+  font-size: .8rem;
+  font-weight: normal;
+  display: inline-block;
+  position: relative;
+  top: 0;
+  right: 0;
+  padding: 0.2rem 0.5rem !important;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+  background-color: #46b450;
+  text-align: center;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem 0 0 0;
+  font-weight: bold;
+  color: #fff;
+  /* Green */
+}
+
+.wpcf7 form.failed .wpcf7-response-output,
+.wpcf7 form.aborted .wpcf7-response-output {
+  background-color: #dc3232;
+  text-align: center;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem 0 0 0;
+  font-weight: bold;
+  color: #fff;
+  /* Red */
+}
+
+.wpcf7 form.spam .wpcf7-response-output {
+
+  background-color: #f56e28;
+  text-align: center;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem 0 0 0;
+  font-weight: bold;
+  color: #fff;
+  /* Orange */
+}
+
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output {
+  background-color: #ffb900;
+  text-align: center;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem 0 0 0;
+  font-weight: bold;
+  color: #735607;
+  /* Yellow */
+}

@@ -1,0 +1,230 @@
+$fsize-sm: .813rem;
+$fsize-initial: 1rem;
+$fsize-md: 1.3rem;
+$fsize-lg: 3rem;
+$fsize-xl: 5.2rem;
+
+.fs-sm {
+  font-size: $fsize-sm !important;
+}
+
+.fs-init {
+  font-size: $fsize-initial !important;
+}
+
+.fs-md {
+  font-size: $fsize-md !important;
+}
+
+.fs-lg {
+  font-size: $fsize-lg !important;
+}
+
+.fs-xl {
+  font-size: $fsize-xl;
+  line-height: 4.6rem;
+  letter-spacing: -6px;
+}
+
+.section-header {
+  border: 1px dashed red;
+  padding: 1rem 0;
+  margin: 0 0 1rem 0;
+  background-color: lime;
+
+  .section-title {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: $eerie-black;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+		@media(max-width: 640px) {
+      font-size: 3.8rem;
+      line-height: 3.5rem;
+    }
+  }
+}
+
+
+
+
+.wrapp-title {
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  line-height: 100%;
+  position: relative;
+  display: block;
+  width: 100%;
+
+
+  @media(max-width: 640px) {
+    padding: 1rem 0;
+    margin: 1rem 0;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation : portrait) {
+    width: 100%;
+  }
+
+  .title-section {
+    //@include inter(3rem, 300, $eerie-black);
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: $eerie-black;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+    letter-spacing: -3px;
+
+    @media(max-width: 640px) {
+      font-size: 3.8rem;
+      line-height: 3.5rem;
+    }
+
+    &.white {
+      color: #fff;
+    }
+
+    &.black {
+      color: $eerie-black;
+    }
+  }
+}
+
+.wrapp-sumary {
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  line-height: 100%;
+  position: relative;
+  display: block;
+  width: 100%;
+
+
+  @media(max-width: 640px) {
+    padding: 1rem 0;
+    margin: 1rem 0;
+    text-align: left;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation : portrait) {
+    width: 100%;
+  }
+
+  .sumary {
+    margin: 0;
+    padding: 0;
+    @include inter(1.6rem, 300, $eerie-black);
+    line-height: 1.8rem;
+
+
+    @media(max-width: 640px) {
+      font-size: 1.6rem;
+      text-align: left;
+    }
+
+    &.white {
+      color: #fff;
+    }
+
+    &.black {
+      color: $eerie-black;
+    }
+
+  }
+}
+
+.wrapp-title-page {
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  line-height: 100%;
+  position: relative;
+  display: block;
+  width: 100%;
+
+
+  @media(max-width: 640px) {
+    padding: 1rem 0;
+    margin: 1rem 0;
+  }
+
+  .bullet {
+    font-size: 3rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px 0 0;
+
+    i {
+      color: $bittersweet;
+    }
+  }
+
+  .entry-title-page {
+    display: inline-block;
+    @include inter(1.6rem, 300, #fff);
+    letter-spacing: -1px;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+  }
+
+  .entry-excerpt-page {
+    @include inter(1.3rem, 300, #fff);
+    line-height: 1.2em;
+    letter-spacing: -1px;
+    margin: 4rem 0 1rem 0;
+  }
+}
+
+.posicion-fixed {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  z-index: 1000;
+  @include transicion;
+}
+
+.wrapp-title-single {
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  line-height: 100%;
+  position: relative;
+  display: block;
+  width: 100%;
+
+  @media(max-width: 640px) {
+    padding: 1rem 0;
+    margin: 1rem 0;
+  }
+
+  .bullet {
+    font-size: 3rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px 0 0;
+
+    i {
+      color: $bittersweet;
+    }
+  }
+
+  .entry-title-page {
+    display: inline-block;
+    @include inter(1.6rem, 300, #fff);
+    letter-spacing: -1px;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+  }
+
+  .entry-excerpt-page {
+    @include inter(1.3rem, 300, #fff);
+    line-height: 1.2em;
+    letter-spacing: -1px;
+    margin: 4rem 0 1rem 0;
+  }
+}

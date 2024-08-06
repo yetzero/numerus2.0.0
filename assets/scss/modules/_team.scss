@@ -1,0 +1,256 @@
+.wrapper-nosotros {
+  .section-title {
+    text-align: right;
+
+    .title {
+      @include raleway(13rem, 600, $eerie-black);
+      margin: 0;
+      padding: 0;
+      line-height: normal;
+      display: inline-block;
+      width: 100%;
+      letter-spacing: -3px;
+
+      @media (max-width: 640px) {
+        font-size: 5rem;
+      }
+
+      .custom-word {
+        width: 100%;
+        display: inline-block;
+        line-height: 100%;
+        font-weight: 400;
+        font-size: 4rem;
+      }
+    }
+
+    .sumary {
+      @include raleway(1.25rem, 500, $eerie-black);
+      margin: 0 0 3rem 0;
+      padding: 0;
+      line-height: normal;
+      display: inline-block;
+      text-align: left;
+      display: inline-block;
+      width: 25%;
+    }
+  }
+
+}
+
+
+/* Team Section
+--------------------------------*/
+#team {
+  padding: 3rem 0;
+
+  @media (max-width: 640px) {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &.wrapp-team {
+    .member {
+      text-align: center;
+      margin: 0;
+      background: $white;
+      position: relative;
+      border-radius: 0;
+      overflow: hidden;
+
+      @media (max-width: 640px) {
+        width: 90%;
+      }
+
+      .custom-thumb {
+        height: 417px;
+        width: auto;
+        transition: 1s;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .member-date {
+        display: inline-block;
+        text-align: left;
+        width: 100%;
+
+        .wrapp-date {
+          padding: 0.5rem 1rem;
+
+          h4 {
+            @include inter(1.2rem, 300, $eerie-black);
+            letter-spacing: -1px;
+            line-height: 1rem;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            width: 100%;
+          }
+
+          p,
+          span,
+          h3 {
+            @include inter(1.2rem, 300, $eerie-black);
+            letter-spacing: -1px;
+            line-height: 1rem;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            width: 100%;
+          }
+        }
+      }
+
+      .member-info {
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        transition: 0.2s all ease-in-out;
+
+        .member-info-content {
+          margin-top: -50px;
+          transition: margin 0.2s;
+        }
+      }
+
+      &:hover {
+        .member-info {
+          width: 100%;
+          height: 100%;
+          background-color: $white;
+          opacity: 1;
+          transition: 0.4s;
+          cursor: pointer;
+
+          .member-info-content {
+            margin: 0;
+            //transition: margin 0.4s;
+            text-align: left;
+            height: 100%;
+
+            p {
+              @include inter(1.188rem, 300, $eerie-black);
+              letter-spacing: -1px;
+              line-height: 1.5rem;
+              margin: 4rem 0 0 0;
+              padding: 0.5rem 1rem;
+              display: inline-block;
+              width: 100%;
+
+            }
+
+            .wrapp-date {
+              position: absolute;
+              bottom: 0;
+              width: 100%;
+              padding: 0.5rem 1rem;
+
+              h4 {
+                @include inter(1.2rem, 300, $eerie-black);
+                letter-spacing: -1px;
+                line-height: 1rem;
+                margin: 0;
+                padding: 0;
+                display: inline-block;
+                width: 100%;
+              }
+
+              h3 {
+                @include inter(1.2rem, 300, $eerie-black);
+                letter-spacing: -1px;
+                line-height: 1rem;
+                margin: 0;
+                padding: 0;
+                display: inline-block;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+
+
+
+
+
+
+
+      .social {
+        margin-top: .5rem;
+
+        a {
+          transition: none;
+          color: #fff;
+
+          &:hover {
+            color: $eerie-black;
+          }
+        }
+
+        i {
+          font-size: 1rem;
+          margin: 0 2px;
+        }
+      }
+    }
+  }
+}
+
+
+
+#team {
+  &.wrapp-team {
+    .item {
+      /*  padding: 0;
+      margin: 0; */
+
+      .thumb-team {
+        width: 320px;
+        height: 420px;
+        object-fit: cover;
+        object-position: top center;
+
+        @media (max-width: 640px) {
+          width: 100%;
+        }
+      }
+    }
+
+    .owl-nav {
+      position: relative;
+      height: auto;
+      text-align: center;
+
+      .owl-prev,
+      .owl-next {
+        position: initial;
+        display: inline-block;
+        height: auto;
+        margin: 0 0.5rem;
+      }
+
+      .owl-prev {
+        .icono-left {
+          color: $eerie-black;
+          font-size: 2.5rem;
+          font-weight: lighter;
+        }
+      }
+
+      .owl-next {
+        .icono-right {
+          color: $eerie-black;
+          font-size: 2.5rem;
+          font-weight: lighter;
+        }
+      }
+    }
+  }
+}

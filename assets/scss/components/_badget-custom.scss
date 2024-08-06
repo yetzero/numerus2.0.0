@@ -1,0 +1,183 @@
+/* 
+* CATEGORIAS:
+* Historias
+* Voces Colunga (columnas)
+* Monitor
+* Ping Pong
+* Miradas Colunga (ex Líderes Colunga... reemplazamos la palabra "líderes")
+* Agenda
+* Los Niños dicen
+* Noticias
+* Transforma
+**/
+
+$forest-green: #009739ff;
+$violet: #554595;
+$coral: #ff7857ff;
+$celadon: #b2e4b4ff;
+$orange: #fb5607ff;
+$amber: #ffbe0bff;
+$engineering-orange: #c51605ff;
+$powder-blue: #a0bfe0ff;
+$brilliant-rose: #ff52a2ff;
+$oxford-blue: #1b263bff;
+$ming: #006878;
+$jet: #2C2C2C;
+$cadet-gray: #8a8d94;
+$silve: #cfd0d2;
+
+
+.badge {
+  text-transform: uppercase;
+  font-size: .7rem;
+
+
+  &.badge-historias,
+  &[class*="badge-historias"] {
+    color: #fff;
+    background-color: $coral;
+
+    a {
+      font-size: 0.625rem;
+      text-decoration: none;
+      color: inherit;
+      line-height: 100%;
+    }
+  }
+
+  &.badge-vocescolunga,
+  &[class*="badge-vocescolunga"] {
+    color: $jet;
+    background-color: $celadon;
+
+    a {
+      font-size: 0.625rem;
+      text-decoration: none;
+      color: inherit;
+      line-height: 100%;
+    }
+  }
+
+  &.badge-monitor,
+  &[class*="badge-monitor"] {
+    color: $jet;
+    background-color: $amber;
+
+    a {
+      font-size: 0.625rem;
+      text-decoration: none;
+      color: inherit;
+      line-height: 100%;
+    }
+  }
+
+  &.badge-pingpong,
+  &[class*="badge-pingpong"] {
+    color: #fff;
+    background-color: $engineering-orange;
+
+    a {
+      font-size: 0.625rem;
+      text-decoration: none;
+      color: inherit;
+      line-height: 100%;
+    }
+  }
+
+  &.badge-miradascolunga,
+  &[class*="badge-miradascolunga"] {
+    color: $jet;
+    background-color: $powder-blue;
+
+    a {
+      font-size: 0.625rem;
+      text-decoration: none;
+      color: inherit;
+      line-height: 100%;
+    }
+  }
+
+  &.badge-losninosdicen,
+  &[class*="badge-losninosdicen"] {
+    color: #fff;
+    background-color: $orange;
+
+    a {
+      font-size: 0.625rem;
+      text-decoration: none;
+      color: inherit;
+      line-height: 100%;
+    }
+  }
+
+  &.badge-noticias,
+  &[class*="badge-noticias"] {
+    color: #fff;
+    background-color: $brilliant-rose;
+
+    a {
+      font-size: 0.625rem;
+      text-decoration: none;
+      color: inherit;
+      line-height: 100%;
+    }
+  }
+
+  &.badge-recomendado,
+  &[class*="badge-recomendado"] {
+    color: #fff;
+    background-color: $oxford-blue;
+  }
+
+  &.badge-transforma,
+  &[class*="badge-transforma"] {
+    color: #fff;
+    background-color: $violet;
+
+    a {
+      font-size: 0.625rem;
+      text-decoration: none;
+      color: inherit;
+      line-height: 100%;
+    }
+  }
+
+  &.badge-primary,
+  &[class*="badge-primary"] {
+    color: #fff;
+    background-color: $forest-green;
+
+    a {
+      font-size: 0.625rem;
+      text-decoration: none;
+      color: inherit;
+      line-height: 100%;
+    }
+  }
+
+  &.badge-noticiascolunga,
+  &[class*="badge-noticiascolunga"] {
+    color: #fff;
+    background-color: $forest-green;
+
+    a {
+      font-size: 0.625rem;
+      text-decoration: none;
+      color: inherit;
+      line-height: 100%;
+    }
+  }
+
+  &.badge-sin-categoria,
+  &[class*="badge-sin-categoria"] {
+    color: #fff;
+    background-color: $jet;
+
+    a {
+      font-size: 0.625rem;
+      text-decoration: none;
+      color: inherit;
+      line-height: 100%;
+    }
+  }
+}

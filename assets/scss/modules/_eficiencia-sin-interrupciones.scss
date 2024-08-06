@@ -1,0 +1,47 @@
+.content-seamless-efficiency {
+  height: auto;
+  min-height: auto;
+  background-color: #BCC4F8;
+  padding: 50px 0;
+  margin: 0;
+
+  .section-title {
+    margin-bottom: 3rem;
+
+    @media (max-width: 640px) {
+      margin-bottom: 0;
+    }
+
+    .title {
+      @include raleway(5rem, 600, $eerie-black);
+      margin: 0 0 3rem 0;
+      padding: 0;
+      line-height: 4.6rem;
+      display: inline-block;
+      width: 100%;
+
+      @media (max-width: 640px) {
+        font-size: 2.3rem;
+        margin: 0 0 1rem 0;
+        line-height: 100%;
+      }
+    }
+  }
+
+  .sumary {
+    @include raleway(1.188rem, 400, $eerie-black);
+    margin: 0 0 1rem 0;
+    padding: 0;
+    line-height: normal;
+    display: inline-block;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+
+    @media (max-width: 640px) {
+      margin: 0 0 1rem 0;
+      width: 100%;
+      font-size: 19px;
+    }
+  }
+}
