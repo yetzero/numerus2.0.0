@@ -116,7 +116,7 @@ createTypedIfExist('#element-banner', {
 });
 
 // Crear Typed para el elemento '#element-category'
-createTypedIfExist('#element-category', {
+createTypedIfExist('.element-category', {
    //...sharedOptions,
     stringsElement: '#typed-strings-category',
     typeSpeed: 50,
@@ -205,27 +205,6 @@ if (viewportWidth > 1024) {
     observer.observe(footer);
 } else {
     console.log('%cEl ancho del viewport es menor o igual a 1024px. El código no se ejecutará.','background: #dc3545; color: #f8d7da; padding: 2px 5px;');
-}
-
-/**
- * @Masonry js
- */
-const grid = document.querySelector('.grid');
-if(grid) {
-	//console.log(true);
-	var msnry = new Masonry( grid, {
-		// options
-		itemSelector: '.grid-item',
-		columnWidth: 350,
-        horizontalOrder: true
-	});
-// element argument can be a selector string
-//   for an individual element
-var msnry = new Masonry( '.grid', {
-      horizontalOrder: true
-});
-} else {
-	//console.log(false)
 }
 
 AOS.init();

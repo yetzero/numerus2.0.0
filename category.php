@@ -24,7 +24,7 @@ get_header('nosotros');
 						<div class="col-12">
 							<div class="inner-hero"> 				
 								<div id="typed-strings-category"><p>Newsroom</p></div>
-								<h1 class="title-hero"><span id="element-category"></span></h1>
+								<h1 class="title-hero"><span class="element-category"></span></h1>
 								<!-- <span class="badge text-bg-primary">category.php</span> --> 
 							</div>							
 						</div>

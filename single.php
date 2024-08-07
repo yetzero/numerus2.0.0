@@ -60,8 +60,7 @@ get_header('nosotros');
 					<div class="col-sm-12 col-md-9 offset-md-3">
 						<div class="row">
 							<div class="col-sm-12 col-md-6 col-lg-6">
-								<?php  $category_id = get_cat_ID( 'newsroom' ); $category_link = get_category_link( $category_id );	?>
-								<a href="<?php echo esc_url( $category_link ); ?>" class="btn btn-border numerus-primary" title="volver a: <?php $category = get_the_category(); echo strtolower($category[0]->cat_name); ?>">Volver</a>
+								<a href="/blog/" class="btn btn-border numerus-primary" title="Volver">Volver</a>
 							</div>
 							<div class="col-sm-12 col-md-6 col-lg-6">
 								<?php if ( get_edit_post_link() ) : ?>
@@ -107,7 +106,7 @@ get_header('nosotros');
 				</div> 
 				<div class="col-12 p-3 mt-3">
 					<div class="wx-50 mx-auto">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="btn btn-full numerus-tertiary" >Volver al inicio</a>
+						<a href="<?php echo esc_url( home_url( '/blog/' ) ); ?>" class="btn btn-full numerus-tertiary" >Volver al inicio</a>
 					</div>
 				</div>
 			</div>
