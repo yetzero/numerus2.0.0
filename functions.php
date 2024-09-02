@@ -442,7 +442,7 @@ function numerus_scripts() {
 	/*
 	*@Script custom.js
 	**/
-	wp_register_script( 'numerus-custom', get_template_directory_uri() . '/assets/js/main.js', array(), '2024.08.07', true );
+	wp_register_script( 'numerus-custom', get_template_directory_uri() . '/assets/js/main.js', array(), '2024.08.08', true );
 	wp_enqueue_script( 'numerus-custom' ); 
 
 	wp_register_script( 'navigation', get_template_directory_uri() . '/assets/js/navbar.js', array(), _S_VERSION, true );

@@ -100,7 +100,7 @@ createTypedIfExist('#element-footer', {
 });
 
 // Crear Typed para el elemento '#element-page'
-createTypedIfExist('#element-page', {
+createTypedIfExist('.element-page', {
     ...sharedOptions,
     stringsElement: '#typed-strings',
     typeSpeed: 50,

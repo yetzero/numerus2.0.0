@@ -28,7 +28,7 @@ get_header(); ?>
 							<div id="typed-strings"> 
 									<p>Metodología más<br>un equipo experto,<br>igual resultados<br>excelentes</p>
 							</div>
-							<h2 class="title-hero"><span id="element-page"></span></h2>							
+							<h2 class="title-hero"><span class="element-page"></span></h2>							
 						</div>
 					</div>
 					<div class="wrapp-btn-hero">

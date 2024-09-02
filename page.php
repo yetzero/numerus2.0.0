@@ -27,7 +27,7 @@ get_header(); ?>
 							<div id="typed-strings"><?php the_title( '<p>', '</p>' ); ?>	</div>
 							<h1 class="titleheading">
 								<!-- <span class="paragraph">Contabilidad más</span> -->
-								<span id="element-page"></span>
+								<span class="element-page"></span>
 							</h1>
 							<!-- <span class="badge text-bg-primary">page.php</span>  -->
 						</div>

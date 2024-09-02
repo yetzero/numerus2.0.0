@@ -18,15 +18,8 @@ get_header('nosotros'); ?>
 
 	<!--=======Intro page =======-->
 	<?php $page_slug = get_post_field('post_name', get_post()); $thumb_id = get_post_thumbnail_id(); $thumb_url = wp_get_attachment_image_src($thumb_id,'full', true); ?>
-	<section id="<?php echo esc_attr($page_slug); ?>" <?php post_class('hero-page-nosotros d-flex align-items-center'); ?>>
-		<article class="wrapp-hero-nosotros">
-			<div class="container">
-				<div class="row">
-					<?php the_content(); ?>
-				</div>
-			</div>
-		</article>
-	</section>
+	
+		<?php the_content(); ?>
 	<div class="container">
 		<div class="row">
 			<?php if ( get_edit_post_link() ) : ?>

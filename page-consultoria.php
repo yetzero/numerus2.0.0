@@ -24,7 +24,7 @@ get_header(); ?>
 						<div class="col-12">
 							<div class="inner-hero-consultoria"> 					
 								<div id="typed-strings"><p>Metodología más<br>un equipo experto,<br>igual resultados<br>excelentes</p></div>
-								<h1 class="title-hero"><span id="element-page"></span></h1>
+								<h1 class="title-hero"><span class="element-page"></span></h1>
 							</div>
 						</div>
 						<!-- <div class="co-12">
