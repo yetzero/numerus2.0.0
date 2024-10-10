@@ -25,7 +25,6 @@ get_header();
 			<div class="row">
 				<div class="col-12">
 					<div class="inner-hero"> 
-					<?php the_content(); ?>
 					<!-- <p class="title-hero" class="text-light">Colegios más</p> -->
 					<h1 class="titleheading">
 						<span class="paragraph" class="text-light">Colegios más</span>
@@ -40,6 +39,8 @@ get_header();
 		</div>
 	</article>
 </section><!-- End Hero -->
+<?php the_content(); ?>
+
 <?php endwhile; else : ?>
 	<!-- The very first "if" tested to see if there were any Posts to -->
  	<!-- display.  This "else" part tells what do if there weren't any. -->
