@@ -72,6 +72,11 @@
 				</div>
 			</div>
 			</div>
+			<div class="footer__colophon" style="display:flex; justify-content: flex-end; margin-bottom: 4rem;">
+				<a href="https://www.idyd.cl" title="Id&D" target="_blank">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/idyd.cl.png" style="width:170px;" >
+				</a>
+			</div>
 		</div>
 	</div>	
 </footer>
