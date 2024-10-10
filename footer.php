@@ -80,6 +80,10 @@
 		</div>
 	</div>	
 </footer>
+
+<a class="cta-db" data-bs-toggle="modal" data-bs-target="#contactModal">
+	<i class="bi bi-envelope"></i> Contáctanos
+</a>
 <?php get_template_part('template-parts/content', 'modal_contact'); ?>
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 <div id="preloader"></div>
@@ -87,5 +91,48 @@
 
 <?php wp_footer(); ?>
 
+<style>
+	.cta-db {
+		position: fixed;
+		bottom: 4rem;
+		right: 2rem;
+		display: block;
+		color: white;
+		padding: .6rem 1rem;
+		font-size: 1rem;
+		font-weight: 300;
+		border-radius: 2rem;
+		border: none;
+		background: rgb(41, 51, 242);
+		text-decoration: none;
+		transform: translateX(0); /* Set to final position */
+		opacity: 0; /* Initially hidden */
+		animation: slideIn 0.5s ease-out 1s forwards; /* Slide-in animation with a delay */
+		z-index: 10;
+		transition: transform 0.2s ease; /* Transition for hover effect */
+	}
+	
+	.cta-db:hover {
+		background: black;
+	}
+	
+	/* Define keyframes for sliding in */
+	@keyframes slideIn {
+		from {
+			transform: translateX(100%); /* Start off-screen */
+			opacity: 0; /* Start invisible */
+		}
+		to {
+			transform: translateX(0); /* Move into view */
+			opacity: 1; /* Become visible */
+		}
+	}
+	
+	.wpcf7 form.sent .wpcf7-response-output {
+	  background-color: rgb(41,51,242);
+	  border-color: rgb(41,51,242);
+  }
+
+</style>
 </body>
 </html>

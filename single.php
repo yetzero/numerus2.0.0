@@ -72,6 +72,49 @@ get_header('nosotros');
 						</div>
 					</div>
 
+					<div class="newsletter">
+						<div class="newsletter__container">
+							<div class="newsletter__row">
+								<div>
+									<p>Si te interesa recibir por correo electrónico nuestras novedades, columnas de opinión, noticias de interés e invitaciones a webinar y eventos, no dejes de suscribirte a nuestro boletín</p>
+								</div>
+								<div>
+									<a data-bs-toggle="modal" data-bs-target="#contactModal" href="#" class="btn btn-full numerus-tertiary " style="font-size: 1.2rem;">Suscríbete</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<style>
+						.newsletter {
+							font-size: 1.2rem;
+							font-weight: 300;
+							margin-top: 4rem;
+							margin-bottom: 2rem;
+						}
+						.newsletter p {
+							margin-bottom: 0;
+						}
+						.newsletter__container {
+							width:90%;
+							max-width: 60rem;
+							margin: 0 auto;
+							border: 1px solid black;
+							border-radius: 2rem;
+							padding: 2rem;
+						}
+						.newsletter__row {
+							display:flex; align-items: center; column-gap: 2rem;
+						}
+						@media (max-width:480px) {
+							.newsletter__row {
+								flex-direction: column;
+								align-items: center;
+								row-gap: 2rem;
+							}
+						}
+					</style>
+
 					<div class="col-12 calltoaction">
 						<div class="wrapp-calltoaction py-5">
 							<div class="row">
