@@ -59,10 +59,6 @@
 								'container_id'      => 'active-menu',
 								'menu_class'        => '',
 								'items_wrap'        => '<ul id="%1$s" class="navbar-nav custom-navbar-nav ms-auto mb-2 mb-lg-0 text-sm %2$s">%3$s
-								<li class="menu-item nav-item">
-									<a class="nav-link"
-									data-bs-toggle="modal" data-bs-target="#contactModal" href="#">Contáctanos</a>
-								</li>
 								</ul><ul class="navbar-nav custom-navbar-second ms-2">
 								<li class="nav-item"><a href="https://numerus.cl/inicio-sesion/" class="btn btn-border numerus-white wx-100 px-5"><i class="bi bi-person-circle"></i> login</a></li></ul>',
 								'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',

@@ -28,7 +28,7 @@
 				<div class="box-demo">
 					<h4>Soporte<br>más<br>cercano</h4>
 					<div class="info-demo-box">
-						<img class="logo-box" src="<?php echo get_template_directory_uri(); ?>/assets/images/zendesk.svg" alt="Zendesk" height="45" width="auto">
+						<img class="logo-box" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-hubspot.svg" alt="Hubspot" height="45" width="auto">
 						<p>Gestión de Ticket automatizado para consultas con equipo de soporte especializado en Colegios.</p>
 					</div>
 				</div>

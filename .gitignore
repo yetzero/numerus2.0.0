@@ -12,3 +12,4 @@ phpcs.xml.dist
 /assets/scss/prepros.config
 /respaldo
 .nova/Publishing/Numerus (allegedly).json
+.DS_Store
