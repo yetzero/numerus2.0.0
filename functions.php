@@ -9,7 +9,7 @@
 
 if (!defined('_S_VERSION')) {
     // Reemplazar el número de versión del tema en cada versión.
-    define('_S_VERSION', '1.0.0');
+    define('_S_VERSION', '1.0.9');
 }
 
 if (!defined('_NAME_THEME')) {
