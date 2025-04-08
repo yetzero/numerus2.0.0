@@ -1,5 +1,5 @@
 console.log('%c<<< load sroll-effect js >>>', 'background: #cff4fc; color:#055160; padding: 2px 5px;');
-/* (function($) {
+ (function($) {
     "use strict";
 
     // Verificar si es un dispositivo de escritorio
@@ -26,7 +26,7 @@ console.log('%c<<< load sroll-effect js >>>', 'background: #cff4fc; color:#05516
         });
     }
 
-})(jQuery); */
+})(jQuery); 
 document.addEventListener('DOMContentLoaded', () => {
 "use strict";
 

@@ -244,16 +244,17 @@ if (viewportWidth > 1024) {
     console.log('%cEl ancho del viewport es menor o igual a 1024px. El código no se ejecutará.','background: #dc3545; color: #f8d7da; padding: 2px 5px;');
 }
 
-// AOS initialization is temporarily disabled to troubleshoot scroll issues
-// AOS.init({
-//     startEvent: 'DOMContentLoaded',
-//     disableMutationObserver: false,
-//     once: true,
-//     mirror: false,
-//     offset: 120,
-//     delay: 0,
-//     duration: 1000,
-//     easing: "ease-in-out"
-// });
+
+/* AOS.init({
+     startEvent: 'DOMContentLoaded',
+     disableMutationObserver: false,
+     once: true,
+     mirror: false,
+     offset: 120,
+    delay: 0,
+     duration: 1000,
+     easing: "ease-in-out"
+ }); */
+
 
  });/* document.addEventListener */

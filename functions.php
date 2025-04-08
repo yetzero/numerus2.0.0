@@ -9,7 +9,7 @@
 
 if (!defined('_S_VERSION')) {
     // Reemplazar el número de versión del tema en cada versión.
-    define('_S_VERSION', '1.0.9');
+    define('_S_VERSION', '1.1.10');
 }
 
 if (!defined('_NAME_THEME')) {
@@ -321,6 +321,10 @@ function numerus_styles() {
 	**/	 
 	wp_register_style('aos', 'https://unpkg.com/aos@2.3.1/dist/aos.css', array(), '2.3.1', 'all');
 	wp_enqueue_style('aos');
+
+	// Register and enqueue AOS fix CSS
+	wp_register_style('aos_fix', get_template_directory_uri() . '/assets/css/aos-fix.css', array('aos'), '1.0.0', 'all');
+	wp_enqueue_style('aos_fix');
 	 
 	
 
@@ -380,6 +384,10 @@ function numerus_scripts() {
 	**/
 	wp_register_script('aos_js',  get_template_directory_uri() . '/assets/lib/aos/aos.js', NULL, '2.3.1', TRUE);
 	wp_enqueue_script('aos_js');
+
+	// Register and enqueue AOS fix script
+	wp_register_script('aos_fix_js',  get_template_directory_uri() . '/assets/js/aos-fix.js', array('aos_js'), '1.0.0', TRUE);
+	wp_enqueue_script('aos_fix_js');
 
 	if ( is_singular() && is_category()) {}
 
