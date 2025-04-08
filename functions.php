@@ -404,8 +404,8 @@ function numerus_scripts() {
 			https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.js
 			get_template_directory_uri() . '/assets/lib/SmoothScroll/smoothscroll.min.js'
 		*/
- 		wp_register_script('smoothScroll', get_template_directory_uri() . '/assets/lib/SmoothScroll/smoothscroll.js', NULL, '1.4.10', TRUE); 
-		wp_enqueue_script('smoothScroll'); 
+ 		// wp_register_script('smoothScroll', get_template_directory_uri() . '/assets/lib/SmoothScroll/smoothscroll.js', NULL, '1.4.10', TRUE); 
+		// wp_enqueue_script('smoothScroll'); 
 	/*
 	*@Script typed.js
 	* cdn: 'https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js'
@@ -497,3 +497,36 @@ remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
 remove_action( 'admin_print_styles', 'print_emoji_styles' );
 remove_action ("wp_head", "wp_generator");
+
+// Add script to disable ScrollSpy and capture scroll restoration
+add_action('wp_footer', 'disable_scroll_reset');
+function disable_scroll_reset() {
+    ?>
+    <script>
+    // Disable Bootstrap ScrollSpy which can cause scroll reset
+    window.addEventListener('load', function() {
+        // Force history scrollRestoration to auto
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'auto';
+        }
+        
+        // Override any ScrollSpy initialization
+        if (typeof window.jQuery !== 'undefined') {
+            if (typeof window.jQuery.fn.scrollspy !== 'undefined') {
+                window.jQuery.fn.scrollspy = function() { return this; };
+            }
+        }
+        
+        // Force window scroll position to be remembered
+        let scrollPos = sessionStorage.getItem('scrollPos');
+        if (scrollPos) {
+            window.scrollTo(0, parseInt(scrollPos));
+        }
+        
+        window.addEventListener('beforeunload', function() {
+            sessionStorage.setItem('scrollPos', window.pageYOffset);
+        });
+    });
+    </script>
+    <?php
+}

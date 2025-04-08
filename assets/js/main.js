@@ -6,6 +6,38 @@
 */
 console.log('%c<<< load main js >>>', 'background: #cff4fc; color:#055160; padding: 2px 5px;');
 
+// Force disable any automatic scroll restoration
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+
+// Enhanced scroll position preservation
+let savedScrollPosition = 0;
+
+// Save scroll position before page unload
+window.addEventListener('beforeunload', function() {
+  savedScrollPosition = window.scrollY;
+  localStorage.setItem('scrollPosition', savedScrollPosition.toString());
+  console.log('Saved position:', savedScrollPosition);
+});
+
+// Restore scroll position as early as possible
+document.addEventListener('DOMContentLoaded', function() {
+  const savedPosition = localStorage.getItem('scrollPosition');
+  if (savedPosition) {
+    const positionY = parseInt(savedPosition);
+    console.log('Restoring to position:', positionY);
+    
+    // Attempt immediate restoration
+    window.scrollTo(0, positionY);
+    
+    // Also try after a short delay to ensure page is fully rendered
+    setTimeout(function() {
+      window.scrollTo(0, positionY);
+    }, 100);
+  }
+});
+
  document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
@@ -63,10 +95,15 @@ console.log('%c<<< load main js >>>', 'background: #cff4fc; color:#055160; paddi
     }
     window.addEventListener('load', togglescrollTop);
     document.addEventListener('scroll', togglescrollTop);
-    scrollTop.addEventListener('click', window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    }));
+    
+    // Modified to use preventDefault and a more controlled scroll approach
+    scrollTop.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
   }
 
 /*
@@ -126,7 +163,7 @@ createTypedIfExist('.element-category', {
 
 	function isMobileOrTablet() {
 		//Menor o igual a 768px medidas de mobile y tablets
-		return $(window).width() <= 768 && /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+		return window.innerWidth <= 768 && /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 	}
 	//console.log('%c<< load isMobileOrTablet() >>','background: #198754; color: #fff; padding: 2px 5px;', isMobileOrTablet(), );
 	const anchors = document.getElementsByTagName('html')[0];
@@ -207,6 +244,16 @@ if (viewportWidth > 1024) {
     console.log('%cEl ancho del viewport es menor o igual a 1024px. El código no se ejecutará.','background: #dc3545; color: #f8d7da; padding: 2px 5px;');
 }
 
-AOS.init();
+// AOS initialization is temporarily disabled to troubleshoot scroll issues
+// AOS.init({
+//     startEvent: 'DOMContentLoaded',
+//     disableMutationObserver: false,
+//     once: true,
+//     mirror: false,
+//     offset: 120,
+//     delay: 0,
+//     duration: 1000,
+//     easing: "ease-in-out"
+// });
 
  });/* document.addEventListener */
